@@ -5,17 +5,35 @@
 [![Tests](https://github.com/kevinschaul/scanify/workflows/Test/badge.svg)](https://github.com/kevinschaul/scanify/actions?query=workflow%3ATest)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/kevinschaul/scanify/blob/master/LICENSE)
 
-Create printable and scannable cards for albums on Spotify
+Create printable and scannable cards for albums on Spotify. Print these images, and scan them with your Spotify app to open up the album.
 
 ## Installation
 
 Install this tool using `pip`:
 
-    $ pip install scanify
+    pip install scanify
 
 ## Usage
 
-Usage instructions go here.
+`scanify` provides two commands that are meant to be run in order.
+
+### `get-albums`
+
+Downloads all albums from your Spotify account, outputting a csv file.
+
+Usage:
+
+    scanify get-albums -o albums.csv
+
+Once downloaded, manually edit the resulting csv file to only include rows for albums that you would like to generate prints for.
+
+### `generate-prints`
+
+Generates images from an albums csv file. Currently creates images suitable for printing on 4x6 paper, with up to six albums per card.
+
+Usage:
+
+    scanify generate-prints -i albums.csv -o prints
 
 ## Development
 
