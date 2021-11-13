@@ -31,7 +31,7 @@ setup(
         [console_scripts]
         scanify=scanify.cli:cli
     """,
-    install_requires=["click"],
+    install_requires=["click", "spotipy", "python-dotenv"],
     extras_require={
         "test": ["pytest"]
     },

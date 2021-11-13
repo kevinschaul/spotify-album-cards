@@ -13,6 +13,16 @@ Install this tool using `pip`:
 
     pip install scanify
 
+Create a Spotify app [here](https://developer.spotify.com/dashboard/). Set the redirect URI to be `http://127.0.0.1:9090`.
+
+Create a `.env` file containing your Spotify app's Client ID, Client Secret and redirect URI as follows:
+
+```
+SPOTIFY_CLIENT_ID='your-spotify-client-id'
+SPOTIFY_CLIENT_SECRET='your-spotify-client-secret'
+SPOTIFY_REDIRECT_URI=http://127.0.0.1:9090
+```
+
 ## Usage
 
 `scanify` provides two commands that are meant to be run in order.
