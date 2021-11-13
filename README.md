@@ -7,7 +7,7 @@
 
 Create printable and scannable cards for albums on Spotify. Print these images on 4x6 paper, and scan them with your Spotify app to open up the album.
 
-![Image showing four album cards](demo.jpg)
+<img src="https://user-images.githubusercontent.com/675639/141661779-99f69a76-5f79-4cbc-a201-5b7c093ebf9d.jpg" alt="Image showing four album cards" width="400" height="600" />
 
 ## Installation
 
