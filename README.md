@@ -5,7 +5,9 @@
 [![Tests](https://github.com/kevinschaul/spotify-album-cards/workflows/Test/badge.svg)](https://github.com/kevinschaul/spotify-album-cards/actions?query=workflow%3ATest)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/kevinschaul/spotify-album-cards/blob/master/LICENSE)
 
-Create printable and scannable cards for albums on Spotify. Print these images, and scan them with your Spotify app to open up the album.
+Create printable and scannable cards for albums on Spotify. Print these images on 4x6 paper, and scan them with your Spotify app to open up the album.
+
+![Image showing four album cards](demo.jpg)
 
 ## Installation
 
