@@ -13,23 +13,23 @@ def get_long_description():
 
 
 setup(
-    name="scanify",
+    name="spotify-album-cards",
     description="Create printable and scannable cards for albums on Spotify",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Kevin Schaul",
-    url="https://github.com/kevinschaul/scanify",
+    url="https://github.com/kevinschaul/spotify-album-cards",
     project_urls={
-        "Issues": "https://github.com/kevinschaul/scanify/issues",
-        "CI": "https://github.com/kevinschaul/scanify/actions",
-        "Changelog": "https://github.com/kevinschaul/scanify/releases",
+        "Issues": "https://github.com/kevinschaul/spotify-album-cards/issues",
+        "CI": "https://github.com/kevinschaul/spotify-album-cards/actions",
+        "Changelog": "https://github.com/kevinschaul/spotify-album-cards/releases",
     },
     license="Apache License, Version 2.0",
     version=VERSION,
-    packages=["scanify"],
+    packages=["spotify_album_cards"],
     entry_points="""
         [console_scripts]
-        scanify=scanify.cli:cli
+        spotify-album-cards=spotify_album_cards.cli:cli
     """,
     install_requires=["click", "spotipy", "python-dotenv", "Pillow", "requests"],
     extras_require={

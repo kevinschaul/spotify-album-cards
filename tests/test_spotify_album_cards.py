@@ -1,5 +1,5 @@
 from click.testing import CliRunner
-from scanify.cli import cli
+from spotify_album_cards.cli import cli
 
 
 def test_version():

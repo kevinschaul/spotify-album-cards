@@ -1,9 +1,9 @@
-# scanify
+# spotify-album-cards
 
-[![PyPI](https://img.shields.io/pypi/v/scanify.svg)](https://pypi.org/project/scanify/)
-[![Changelog](https://img.shields.io/github/v/release/kevinschaul/scanify?include_prereleases&label=changelog)](https://github.com/kevinschaul/scanify/releases)
-[![Tests](https://github.com/kevinschaul/scanify/workflows/Test/badge.svg)](https://github.com/kevinschaul/scanify/actions?query=workflow%3ATest)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/kevinschaul/scanify/blob/master/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/spotify-album-cards.svg)](https://pypi.org/project/spotify-album-cards/)
+[![Changelog](https://img.shields.io/github/v/release/kevinschaul/spotify-album-cards?include_prereleases&label=changelog)](https://github.com/kevinschaul/spotify-album-cards/releases)
+[![Tests](https://github.com/kevinschaul/spotify-album-cards/workflows/Test/badge.svg)](https://github.com/kevinschaul/spotify-album-cards/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/kevinschaul/spotify-album-cards/blob/master/LICENSE)
 
 Create printable and scannable cards for albums on Spotify. Print these images, and scan them with your Spotify app to open up the album.
 
@@ -11,7 +11,7 @@ Create printable and scannable cards for albums on Spotify. Print these images, 
 
 Install this tool using `pip`:
 
-    pip install scanify
+    pip install spotify-album-cards
 
 Create a Spotify app [here](https://developer.spotify.com/dashboard/). Set the redirect URI to be `http://127.0.0.1:9090`.
 
@@ -25,7 +25,7 @@ SPOTIFY_REDIRECT_URI=http://127.0.0.1:9090
 
 ## Usage
 
-`scanify` provides two commands that are meant to be run in order.
+`spotify-album-cards` provides two commands that are meant to be run in order.
 
 ### `get-albums`
 
@@ -33,7 +33,7 @@ Downloads all albums from your Spotify account, outputting a csv file.
 
 Usage:
 
-    scanify get-albums -o albums.csv
+    spotify-album-cards get-albums -o albums.csv
 
 Once downloaded, manually edit the resulting csv file to only include rows for albums that you would like to generate prints for.
 
@@ -43,13 +43,13 @@ Generates images from an albums csv file. Currently creates images suitable for 
 
 Usage:
 
-    scanify generate-prints -i albums.csv -o prints
+    spotify-album-cards generate-prints -i albums.csv -o prints
 
 ## Development
 
 To contribute to this tool, first checkout the code. Then create a new virtual environment:
 
-    cd scanify
+    cd spotify-album-cards
     python -m venv venv
     source venv/bin/activate
 
