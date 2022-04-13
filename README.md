@@ -7,7 +7,7 @@
 
 Create printable and scannable cards for albums on Spotify. Print these images on 4x6 paper, and scan them with your Spotify app to open up the album.
 
-<img src="https://user-images.githubusercontent.com/675639/141661779-99f69a76-5f79-4cbc-a201-5b7c093ebf9d.jpg" alt="Image showing four album cards" width="400" height="600" />
+![example-cards](https://user-images.githubusercontent.com/675639/163279913-dfb02c31-d1d7-4685-8a3d-d9e90353057f.jpg)
 
 ## Installation
 
@@ -46,6 +46,10 @@ Generates images from an albums csv file. Currently creates images suitable for 
 Usage:
 
     spotify-album-cards generate-prints -i albums.csv -o prints
+
+Following that command, `prints/` will contain images like this:
+
+<img src="https://user-images.githubusercontent.com/675639/141661779-99f69a76-5f79-4cbc-a201-5b7c093ebf9d.jpg" alt="Image showing four album cards" width="400" height="600" />
 
 ## Development
 
